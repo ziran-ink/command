@@ -11,12 +11,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.airlift.command;
+package com.github.ziran_ink.command;
 
 public class CommandTimeoutException
         extends CommandFailedException
 {
-    public CommandTimeoutException(Command command)
+	private static final long serialVersionUID = 1L;
+
+	public CommandTimeoutException(Command command)
     {
         super(command, "did not complete in " + command.getTimeLimit(), null);
     }

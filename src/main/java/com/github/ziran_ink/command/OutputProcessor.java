@@ -11,7 +11,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.airlift.command;
+package com.github.ziran_ink.command;
 
 import com.google.common.io.CharStreams;
 
@@ -22,7 +22,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Future;
 
-import static io.airlift.command.Command.submit;
+import static com.github.ziran_ink.command.Command.submit;
 import static java.nio.charset.StandardCharsets.UTF_8;
 import static java.util.Objects.requireNonNull;
 

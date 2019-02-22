@@ -11,14 +11,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.airlift.command;
+package com.github.ziran_ink.command;
 
 import static java.lang.String.format;
 
 public class CommandFailedException
         extends Exception
 {
-    private final Integer exitCode;
+	private static final long serialVersionUID = 1L;
+	private final Integer exitCode;
     private final String output;
     private final Command command;
 
